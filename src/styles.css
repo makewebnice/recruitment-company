@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+.App {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.app-wrapper {
+  max-width: 1024px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.header-class {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.company-logo h2 {
+  font-size: 1.5rem;
+}
+
+.nav-class {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-link:hover:before {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 15px;
+  height: 5px;
+  content: "";
+  border-radius: 20px;
+  background-color: rgba(28, 28, 28, 0.5);
+}
+
+.main-container {
+  margin: auto;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem; /* 2rem */
+  flex-wrap: wrap-reverse;
+}
+
+.hero {
+  max-width: 35rem;
+}
+
+.hero p {
+  font-size: 2.5rem;
+}
+
+.link-list {
+  display: none;
+}
+
+.link-list li:nth-child(odd) {
+  transform: skew(-20deg);
+}
+
+.link-list li:nth-child(even) {
+  transform: skew(20deg);
+}
+
+.link-list li div {
+  cursor: pointer;
+  background-color: #1c1c1c;
+  display: inline-block;
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  min-width: 280px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.link-list li div:hover {
+  font-weight: 700;
+}
+
+.details-section {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1.125rem; /* 1rem */
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.location {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.location-icon {
+  cursor: pointer;
+}
+
+.fa-location-custom {
+  color: #1c1c1c;
+}
+
+.fa-location-custom:hover {
+  color: rgba(28, 28, 28, 0.5);
+}
+
+.highlights-container {
+  margin-top: 6rem;
+}
+
+.highlights-section {
+  display: flex;
+  align-items: flex-end;
+  gap: 2.5rem; /* 2rem */
+  flex-wrap: wrap-reverse;
+  margin-top: 3rem;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* 2rem */
+}
+
+ul.testimonial-list li:first-of-type {
+  margin-bottom: 3rem; /* 2rem */
+}
+
+.testimonial-image-wrapper {
+  min-width: 100px;
+  height: 100px;
+  background-color: rgba(28, 28, 28, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-image: url("https://assets.website-files.com/5e51c674258ffe10d286d30a/5e53599be35d38774267afad_peep-68.png");
+  border-radius: 50%;
+}
+
+.testimonial-content {
+  max-width: 30rem;
+  min-width: 280px;
+}
+
+.testimonial-heading,
+.testimonial-text {
+  font-weight: 300;
+}
+
+.testimonial-text {
+  margin-top: 0.5rem;
+  font-size: 1.125rem; /* 1rem */
+  line-height: 1.6rem;
+}
+
+.testimonial-heading .person-name {
+  font-weight: 700;
+}
+
+.highlights-card {
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  padding-left: 3rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.highlights-card li {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.highlights-card li:last-of-type {
+  margin-bottom: 0;
+}
+
+.highlights-card li::before {
+  position: absolute;
+  content: "";
+  left: -1rem;
+  top: 50%;
+  width: 0.375rem;
+  height: 0.375rem;
+  background-color: #1c1c1c;
+}
+
+.services-container {
+  margin-top: 4rem;
+}
+
+.services-section {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2.5rem; /* 2rem */
+}
+
+.service-content {
+  max-width: 30rem;
+  min-width: 280px;
+}
+
+.service-heading {
+  font-weight: 700;
+}
+
+.service-text {
+  font-weight: 300;
+  font-size: 1.125rem; /* 1rem */
+  margin-top: 0.5rem;
+  line-height: 1.6rem;
+}
+
+.aboutus-container {
+  margin-top: 4rem;
+}
+
+.aboutus-section {
+  margin-top: 3rem;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2.5rem; /* 2rem */
+}
+
+.aboutus-image {
+  min-width: 280px;
+  height: 240px;
+  background-color: rgba(28, 28, 28, 0.5);
+  border-radius: 10px;
+}
+
+.aboutus-text {
+  font-weight: 300;
+  font-size: 1.125rem; /* 1rem */
+  max-width: 30rem;
+  min-width: 280px;
+  line-height: 1.6rem;
+}
+
+.contactus-container {
+  margin-top: 4rem;
+}
+
+.contactus-section {
+  margin-top: 3rem;
+}
+
+.contactus-heading {
+  font-weight: 700;
+}
+
+.time {
+  font-weight: 300;
+}
+
+.contactus-card {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contactus-card li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.contactus-card li:last-of-type {
+  margin-bottom: 0;
+}
+
+.phone,
+.email {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+@media (min-width: 450px) {
+  .services-section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (min-width: 800px) {
+  .app-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .company-logo h2 {
+    font-size: 2rem;
+  }
+
+  .nav-class {
+    font-size: 1.5rem;
+  }
+
+  .main-container {
+    margin-top: 8rem;
+  }
+
+  .hero p {
+    font-size: 4rem;
+  }
+
+  .link-list {
+    display: inherit;
+  }
+
+  .highlights-container {
+    margin-top: 8rem;
+  }
+
+  .highlights-section {
+    gap: 3rem; /* 2rem */
+    margin-top: 4rem;
+  }
+
+  .testimonial-container {
+    gap: 2rem; /* 2rem */
+  }
+
+  .highlights-card {
+    font-size: 1.5rem;
+  }
+
+  .services-container {
+    margin-top: 8rem;
+  }
+
+  .services-section {
+    margin-top: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem; /* 2rem */
+  }
+
+  .aboutus-container {
+    margin-top: 8rem;
+  }
+
+  .aboutus-section {
+    margin-top: 4rem;
+    gap: 3rem; /* 2rem */
+  }
+
+  .contactus-container {
+    margin-top: 8rem;
+  }
+
+  .contactus-section {
+    margin-top: 4rem;
+  }
+}
