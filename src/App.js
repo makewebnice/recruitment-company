@@ -133,8 +133,8 @@ export default function App() {
             </div>
           </main>
         </div>
-        <Highlights />
         <Services />
+        <Highlights />
         <AboutUs />
         <ContactUs />
       </div>
